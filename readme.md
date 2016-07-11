@@ -15,4 +15,8 @@ TMPDIR=$(dirname $(mktemp -u)) && \
 
 Easy:
 
-`docker-nano my-container /path/to/file`
+`docker-nano my-container /path/to/file.md`
+
+or, using a relative path using your container's current working directory:
+
+`docker-nano my-container file.md`
